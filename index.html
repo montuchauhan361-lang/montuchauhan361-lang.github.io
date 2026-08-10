@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Just For Us ❤️</title>
 
 <style>
@@ -14,10 +13,10 @@
 body {
     margin: 0;
     min-height: 100vh;
-    padding: 30px 15px;
     font-family: Arial, sans-serif;
     color: white;
     background: linear-gradient(135deg, #18000d, #4b0028, #16000c);
+    padding: 30px 15px;
 }
 
 .container {
@@ -43,7 +42,6 @@ h1 {
     border: 1px solid rgba(255,255,255,0.18);
     border-radius: 24px;
     padding: 18px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 
 .card h2 {
@@ -63,41 +61,33 @@ h1 {
 .youtube-card img {
     display: block;
     width: 100%;
-    height: auto;
 }
 
-.play-button {
+.play {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    width: 76px;
-    height: 52px;
-    border-radius: 15px;
-
+    width: 70px;
+    height: 50px;
+    border-radius: 14px;
     background: #ff0033;
-    color: white;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
-    font-size: 28px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    font-size: 27px;
 }
 
-.watch-text {
+.watch {
     text-align: center;
-    margin-top: 18px;
     color: #ffb8d8;
-    font-size: 16px;
+    margin-top: 16px;
 }
 
 .footer {
     text-align: center;
-    margin-top: 40px;
     color: #ffb8d8;
+    margin-top: 40px;
     font-size: 14px;
 }
 </style>
@@ -119,7 +109,9 @@ h1 {
 
         <a
             class="youtube-card"
-            href="intent://youtube.com/shorts/duEuPlVba1s#Intent;scheme=https;package=com.google.android.youtube;end"
+            href="https://www.youtube.com/watch?v=duEuPlVba1s"
+            target="_blank"
+            rel="noopener noreferrer"
         >
 
             <img
@@ -127,14 +119,12 @@ h1 {
                 alt="Our Special Video"
             >
 
-            <div class="play-button">
-                ▶
-            </div>
+            <div class="play">▶</div>
 
         </a>
 
-        <div class="watch-text">
-            Tap the video to open it in YouTube ❤️
+        <div class="watch">
+            Tap the video to watch on YouTube ❤️
         </div>
 
     </div>
