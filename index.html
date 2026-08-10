@@ -1,1 +1,122 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Just For Us ❤️</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #12000b, #300018, #09000d);
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 55px 20px 35px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin: 0 0 10px;
+}
+
+header p {
+    color: #ffc5dc;
+    font-size: 17px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.video-card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 18px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.video-card h2 {
+    margin-top: 0;
+    color: #ffb3d1;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #aaa;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>❤️ Just For Us ❤️</h1>
+    <p>A little place made just for you.</p>
+</header>
+
+<div class="container">
+
+    <!-- VIDEO 1 -->
+    <div class="video-card">
+        <h2>🎵 Our First Song</h2>
+
+        <div class="video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID_1"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+
+    <!-- VIDEO 2 -->
+    <div class="video-card">
+        <h2>🌙 One Special Video</h2>
+
+        <div class="video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID_2"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    Made with ❤️
+</footer>
+
+</body>
+</html>
