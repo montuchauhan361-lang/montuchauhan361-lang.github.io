@@ -13,11 +13,11 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     min-height: 100vh;
-    background: linear-gradient(135deg, #18000d, #4b0028, #16000c);
-    color: white;
     padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: linear-gradient(135deg, #18000d, #4b0028, #16000c);
 }
 
 .container {
@@ -51,15 +51,12 @@ h1 {
     margin: 5px 0 18px;
 }
 
-/* CLICKABLE YOUTUBE THUMBNAIL */
-
 .youtube-card {
     display: block;
     position: relative;
-    text-decoration: none;
-    color: white;
-    border-radius: 18px;
     overflow: hidden;
+    border-radius: 18px;
+    text-decoration: none;
     background: #111;
 }
 
@@ -74,16 +71,18 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-    width: 72px;
-    height: 50px;
+
+    width: 76px;
+    height: 52px;
     border-radius: 15px;
-    
+
     background: #ff0033;
+    color: white;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     font-size: 28px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
@@ -97,4 +96,54 @@ h1 {
 
 .footer {
     text-align: center;
-    margin-top
+    margin-top: 40px;
+    color: #ffb8d8;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>❤️ Just For Us ❤️</h1>
+
+    <div class="subtitle">
+        A little place made just for you.
+    </div>
+
+    <div class="card">
+
+        <h2>🎵 Our Special Video</h2>
+
+        <a
+            class="youtube-card"
+            href="intent://youtube.com/shorts/duEuPlVba1s#Intent;scheme=https;package=com.google.android.youtube;end"
+        >
+
+            <img
+                src="https://i.ytimg.com/vi/duEuPlVba1s/hqdefault.jpg"
+                alt="Our Special Video"
+            >
+
+            <div class="play-button">
+                ▶
+            </div>
+
+        </a>
+
+        <div class="watch-text">
+            Tap the video to open it in YouTube ❤️
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Made with ❤️ just for you
+    </div>
+
+</div>
+
+</body>
+</html>
