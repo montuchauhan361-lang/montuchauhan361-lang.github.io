@@ -3,13 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Just For Us ❤️</title>
 
 <style>
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
     margin: 0;
@@ -43,27 +40,34 @@ h1 {
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 25px;
     padding: 20px;
-    margin-bottom: 25px;
 }
 
 .card h2 {
     color: #ff9dcc;
     font-size: 25px;
-    margin-top: 0;
 }
 
-.video {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
+.youtube-link {
+    display: block;
+    text-decoration: none;
+    background: #ff0033;
+    color: white;
+    text-align: center;
+    padding: 20px;
     border-radius: 18px;
-    overflow: hidden;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
-.video iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
+.youtube-link:active {
+    transform: scale(0.98);
+}
+
+.note {
+    text-align: center;
+    color: #ffb6d9;
+    margin-top: 15px;
 }
 
 .footer {
@@ -88,15 +92,14 @@ h1 {
 
         <h2>🎵 Our Special Video</h2>
 
-        <div class="video">
+        <a class="youtube-link"
+           href="https://youtube.com/shorts/duEuPlVba1s?si=7eY0sEXplafR6zNf"
+           target="_blank">
+           ▶️ Watch on YouTube
+        </a>
 
-            <iframe
-                src="https://www.youtube.com/embed/duEuPlVba1s"
-                title="Our Special Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-
+        <div class="note">
+            Tap the button to open the video on YouTube ❤️
         </div>
 
     </div>
