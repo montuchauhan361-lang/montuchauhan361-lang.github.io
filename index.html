@@ -3,17 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Just For Us ❤️</title>
 
 <style>
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #250014, #4b0028, #18000e);
-    color: white;
     min-height: 100vh;
+    background: linear-gradient(135deg, #18000d, #4b0028, #16000c);
+    color: white;
     padding: 30px 15px;
 }
 
@@ -24,91 +27,74 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin: 20px 0 8px;
 }
 
 .subtitle {
     text-align: center;
-    color: #ffb6d9;
-    font-size: 20px;
+    color: #ffb8d8;
+    font-size: 18px;
     margin-bottom: 35px;
 }
 
 .card {
     background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 25px;
-    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 24px;
+    padding: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 
 .card h2 {
-    color: #ff9dcc;
-    font-size: 25px;
+    color: #ffafd2;
+    margin: 5px 0 18px;
 }
 
-.youtube-link {
+/* CLICKABLE YOUTUBE THUMBNAIL */
+
+.youtube-card {
     display: block;
+    position: relative;
     text-decoration: none;
-    background: #ff0033;
     color: white;
-    text-align: center;
-    padding: 20px;
     border-radius: 18px;
-    font-size: 21px;
-    font-weight: bold;
-    margin-top: 20px;
+    overflow: hidden;
+    background: #111;
 }
 
-.youtube-link:active {
-    transform: scale(0.98);
+.youtube-card img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-.note {
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 72px;
+    height: 50px;
+    border-radius: 15px;
+    
+    background: #ff0033;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 28px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.watch-text {
     text-align: center;
-    color: #ffb6d9;
-    margin-top: 15px;
+    margin-top: 18px;
+    color: #ffb8d8;
+    font-size: 16px;
 }
 
 .footer {
     text-align: center;
-    color: #ffb6d9;
-    margin-top: 40px;
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-    <h1>❤️ Just For Us ❤️</h1>
-
-    <div class="subtitle">
-        A little place made just for you.
-    </div>
-
-    <div class="card">
-
-        <h2>🎵 Our Special Video</h2>
-
-        <a class="youtube-link"
-           href="https://youtube.com/shorts/duEuPlVba1s?si=7eY0sEXplafR6zNf"
-           target="_blank">
-           ▶️ Watch on YouTube
-        </a>
-
-        <div class="note">
-            Tap the button to open the video on YouTube ❤️
-        </div>
-
-    </div>
-
-    <div class="footer">
-        Made with ❤️ just for you
-    </div>
-
-</div>
-
-</body>
-</html>
+    margin-top
